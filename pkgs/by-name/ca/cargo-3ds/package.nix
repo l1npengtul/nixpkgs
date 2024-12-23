@@ -23,7 +23,10 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Cargo command to work with Nintendo 3DS project binaries. Based on cargo-psp.";
     homepage = "https://github.com/rust3ds/cargo-3ds";
-    license = with licenses; [mit asl20];
-    maintainers = with maintainers; [l1npengtul];
+    license = with licenses; [
+      mit
+      asl20
+    ];
+    maintainers = with maintainers; [ l1npengtul ];
   };
 }
