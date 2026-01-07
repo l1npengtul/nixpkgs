@@ -113,6 +113,10 @@ stdenv.mkDerivation {
     ]
   );
 
+  patches = [
+    ./fix-fiddle.patch
+  ];
+
   preBuild = ''
     # fix LV2 build
     HOME=$(mktemp -d)
